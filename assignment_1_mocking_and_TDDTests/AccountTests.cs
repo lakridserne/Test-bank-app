@@ -9,11 +9,7 @@ namespace assignment_1_mocking_and_TDD.Tests
     [TestClass()]
     public class AccountTests
     {
-        [TestMethod()]
-        public void AccountTest()
-        {
-            Assert.Fail();
-        }
+       
 
         [TestMethod()]
         public void getBankTest()

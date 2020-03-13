@@ -13,4 +13,8 @@
     <PackageReference Include="coverlet.collector" Version="1.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\assignment_1_mocking_and_TDD\assignment_1_mocking_and_TDD.csproj" />
+  </ItemGroup>
+
 </Project>
