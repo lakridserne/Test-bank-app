@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assignment1_MockingAndTDD
 {
-    interface ICustomer
+   public interface ICustomer
     {
     }
 }
