@@ -1,0 +1,11 @@
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\bin\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.exe
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\bin\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.deps.json
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\bin\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.runtimeconfig.json
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\bin\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.runtimeconfig.dev.json
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\bin\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.dll
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\bin\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.pdb
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\obj\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.csprojAssemblyReference.cache
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\obj\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.AssemblyInfoInputs.cache
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\obj\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.AssemblyInfo.cs
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\obj\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.dll
+C:\Users\Gordon\Documents\GitHub\Assignment-1---Mocking-and-TDD\assignment_1_mocking_and_TDD\obj\Debug\netcoreapp3.1\assignment_1_mocking_and_TDD.pdb
