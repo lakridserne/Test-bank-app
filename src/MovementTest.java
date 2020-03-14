@@ -1,10 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import java.time.*;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class MovementTest {
@@ -14,7 +9,7 @@ class MovementTest {
     public  void testDatetimeN(){
 
 
-        Bank bank = new Bank("124", "Jonas");
+        Bank bank = new Bank("124", "jons");
 
         Account account1  = new Account(bank, "jonas", "1234");
 
