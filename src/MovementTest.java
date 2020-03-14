@@ -25,12 +25,7 @@ class MovementTest {
 
 
         Movement expectedResult = new Movement(localDateTime3, 1000, account1, account2 );
-
         Class<? extends Movement> actualResult = expectedResult.getClass();
-
-      //  Class<? extends Movement> actualResult = expectedResult.getClass();
-
-
 
         assertEquals(expectedResult, actualResult);
     }
