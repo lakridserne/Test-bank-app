@@ -24,13 +24,15 @@ class MovementTest {
                 LocalDateTime.of(2019, Month.MARCH, 28, 14, 33, 48);
 
 
-        Movement movement = new Movement(localDateTime3, 1000, account1, account2 );
+        Movement expectedResult = new Movement(localDateTime3, 1000, account1, account2 );
 
-        Class<? extends Movement> actualResult = movement.getClass();
+        Class<? extends Movement> actualResult = expectedResult.getClass();
+
+      //  Class<? extends Movement> actualResult = expectedResult.getClass();
 
 
 
-        assertEquals(movement, actualResult);
+        assertEquals(expectedResult, actualResult);
     }
 }
 
