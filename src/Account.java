@@ -1,12 +1,12 @@
 public class Account {
     private Bank Bank;
-    private Customer customer;
+    private Customer Customer;
     private String number;
     private long balance = 0;
 
-    public Account(Bank IBank, Customer customer, String number) {
+    public Account(Bank IBank, Customer Customer, String number) {
         this.Bank = IBank;
-        this.customer = customer;
+        this.Customer = Customer;
         this.number = number;
     }
 
@@ -15,7 +15,7 @@ public class Account {
     }
 
     public Customer getCustomer() {
-        return customer;
+        return Customer;
     }
 
     public String getNumber() {
@@ -32,7 +32,7 @@ public class Account {
     }
 
     public void transfer(long amount, String targetNumber) {
-        Account target = Bank.getAccount(targetNumber);
+        String target = Bank.getAccount(targetNumber);
         transfer(amount, target);
     }
 

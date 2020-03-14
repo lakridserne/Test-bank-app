@@ -7,7 +7,7 @@ public class Bank {
     private  String name;
     private  String cvr;
     private ArrayList<Account> accounts;
-    private  Account account;
+    private  String account;
     private Bank bank;
 
 
@@ -25,12 +25,12 @@ public class Bank {
         this.name = cvr;
     }
 
-    public  Account getAccount(int nummber)
+    public String getAccount( String nummber)
     {
             return account;
     }
 
-    public List<Account> getAccounts(Customer customer){
+    public List<Account> getAccounts(Customer ICustomer){
 
         return accounts;
     }
