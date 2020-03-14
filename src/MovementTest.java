@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDateTime;
+import java.time.*;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,16 +11,22 @@ class MovementTest {
 
 
     @Test
-    public  void testDatetime(){
-
-        Movement movement = new Movement(2020-03-02-12-02-10.001, 20000);
-
-        LocalDateTime expected = 2020-03-02-12-02-10.001;
+    public  void testDatetimeN(){
 
 
-        LocalDateTime actualResult = movement.getDate();
+        Bank bank = new Bank("124", "Jonas");
 
-        assertEquals(expected, actualResult);
+        Account account1  = new Account(bank, "jonas", "1234");
+
+        Account account2  = new Account(bank, "Jack", "23456");
+
+        Movement movement = new Movement("2020-03-02-12-02-10.001", 1000, "1235", "1234", "23456" );
+
+        Movement actualResult = movement.getMovment();
+
+
+
+        assertEquals(movement, actualResult);
     }
 }
 
