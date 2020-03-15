@@ -24,11 +24,4 @@ public class Customer {
     private String cpr;
 
     private String name;
-
-
-
-    public void transfer(long amount, String account, String target){
-
-
-    }
 }

@@ -1,6 +1,4 @@
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class Movement {
 
@@ -8,13 +6,16 @@ public class Movement {
     private Account withdraw;
     private Account deposited;
     private LocalDateTime currentDate;
-    private int amount;
+    private long amount;
 
 
-    public Movement(LocalDateTime currentDate, int amount, Account withdraw, Account deposited) {
+    public Movement(LocalDateTime currentDate, long amount, Account withdraw, Account deposited) {
         this.currentDate = currentDate;
         this.amount = amount;
         this.withdraw = withdraw;
         this.deposited = deposited;
     }
+
+    public Account getWithdrawalAccount() { return withdraw; }
+    public Account getDepositAccount() { return deposited; }
 }

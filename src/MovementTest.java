@@ -1,33 +1,28 @@
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
-import java.time.Month;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MovementTest {
-
-
     @Test
-    public  void testDatetimeN(){
-
-
+    public void testMovement() {
         Bank bank = new Bank("124", "jons");
-        Customer c1 = new Customer("Jonas", "070887");
-        Customer c2 = new Customer("Jonas", "070887");
+        Customer c1 = new Customer("Jonas", "0708871213");
+        Customer c2 = new Customer("Kasper", "0705894531");
 
 
         Account account1  = new Account(bank, c1, "3434" );
         Account account2 = new Account(bank, c2, "86924" );
+        LocalDateTime currentDate = LocalDateTime.now();
+        Movement expectedResult = new Movement(currentDate, 1000, account1, account2 );
 
-        LocalDateTime localDateTime3 =
-                LocalDateTime.of(2019, Month.MARCH, 28, 14, 33, 48);
+        account1.transfer(1000, account2);
 
+        Movement actualResult = account1.getMovements(account1).get(0);
 
-        Movement expectedResult = new Movement(localDateTime3, 1000, account1, account2 );
-        Class<? extends Movement> actualResult = expectedResult.getClass();
-
-        assertEquals(expectedResult, actualResult);
+        assertEquals(account1.getBalance(), -1000);
+        assertEquals(account2.getBalance(), 1000);
     }
 }
 
