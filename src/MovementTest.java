@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDateTime;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MovementTest {
@@ -14,12 +12,8 @@ class MovementTest {
 
         Account account1  = new Account(bank, c1, "3434" );
         Account account2 = new Account(bank, c2, "86924" );
-        LocalDateTime currentDate = LocalDateTime.now();
-        Movement expectedResult = new Movement(currentDate, 1000, account1, account2 );
 
         account1.transfer(1000, account2);
-
-        Movement actualResult = account1.getMovements(account1).get(0);
 
         assertEquals(account1.getBalance(), -1000);
         assertEquals(account2.getBalance(), 1000);
