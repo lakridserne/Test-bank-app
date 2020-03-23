@@ -8,19 +8,19 @@ namespace Assignment2_Integration_Tests
     {
 
 
-        private String name;
-        private String cvr;
+        private string name;
+        private string cvr;
         private List<Account> accounts;
-        private String account;
+        private string account;
         private Bank bank;
 
 
-        public String getCvr()
+        public string getCvr()
         {
             return cvr;
         }
 
-        public void setCvr(String cvr)
+        public void setCvr(string cvr)
         {
             this.cvr = cvr;
         }
