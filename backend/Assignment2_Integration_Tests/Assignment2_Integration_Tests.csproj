@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Contract_Test">
+      <HintPath>..\..\contract\Contract_Test\bin\Debug\netstandard2.0\Contract_Test.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

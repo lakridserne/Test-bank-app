@@ -7,6 +7,5 @@ namespace Contract_Test.DTOs
    public class AccountDetails
     {
         public int Number { get; set; }
-        
     }
 }

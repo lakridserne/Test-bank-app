@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Assignment2_Integration_Tests
 {
-    public class Account
+    public class Account :IAccount
     {
         private Bank Bank;
         private Customer Customer;
@@ -52,6 +52,7 @@ namespace Assignment2_Integration_Tests
             return returnList;
         }
 
+
         public void transfer(long amount, Account target)
         {
             balance -= amount;
@@ -65,5 +66,6 @@ namespace Assignment2_Integration_Tests
             string target = Bank.getAccount(targetNumber);
             transfer(amount, target);
         }
+
     }
 }
