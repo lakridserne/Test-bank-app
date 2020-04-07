@@ -1,6 +1,8 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
+using MySql.Data.MySqlClient;
 
 namespace Assignment2_Integration_Tests
 {
@@ -12,7 +14,7 @@ namespace Assignment2_Integration_Tests
         private string cvr;
         private List<Account> accounts;
         private string account;
-        private Bank bank;
+        private Bank _bank;
 
 
         public string getCvr()
@@ -41,6 +43,18 @@ namespace Assignment2_Integration_Tests
         {
 
             return accounts;
+        }
+
+        public void CreateTables()
+        {
+           if (_bank == null)
+            { 
+                MySqlConnection cs = new MySqlConnection("Server=127.0.0.1;Database=db_bank;Uid=bank;Pwd=abc123");
+                
+                MySqlCommand acmd = new MySqlCommand(@"CREATE TABEL 'bank'name VARCHAR(100) NOT NULL, cvr VARCHAR(40)", cs);
+                cs.Open();
+                acmd.ExecuteNonQuery();
+            }
         }
     }
 

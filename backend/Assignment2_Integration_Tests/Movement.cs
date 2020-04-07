@@ -6,8 +6,6 @@ namespace Assignment2_Integration_Tests
 {
     public class Movement
     {
-
-        private DateTime _localDateTime;
         private Account _withdraw;
         private Account _deposited;
         private DateTime _currentDate;
