@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="0.63.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Contract_Test">
       <HintPath>..\..\contract\Contract_Test\bin\Debug\netstandard2.0\Contract_Test.dll</HintPath>
     </Reference>
