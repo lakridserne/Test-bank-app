@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Contract_Test.Interface
 {
-    interface ICustomer
+   public interface ICustomer
     {
         string getName();
         void setName(string name);
