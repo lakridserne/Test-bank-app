@@ -11,5 +11,6 @@ namespace Assignment2_Integration_Tests
         Customer getCustomer(String number);
         void registerCustomer(Customer ICustomer);
         String getName();
+
     }
 }

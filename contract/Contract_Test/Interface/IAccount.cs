@@ -6,9 +6,13 @@ namespace Contract_Test.Interface
 {
    public interface IAccount
     {
-
-        void transfer();
-        void transfer1();
+        IBank GetBank();
+        ICustomer getCustomer();
+        string getNumber();
+        long getBalance();
+        List<IMovement> getMovements(IAccount withdraw);
+        void transfer(long amount, IAccount target);
+        void transfer(long amount, string targetNumber);
     }
 }
 
