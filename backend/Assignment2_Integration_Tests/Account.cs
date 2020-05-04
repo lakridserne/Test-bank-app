@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -66,6 +67,43 @@ namespace Assignment2_Integration_Tests
             string target = Bank.getAccount(targetNumber);
             transfer(amount, target);
         }
+
+
+        public void CreateAccount()
+        {
+            MySqlConnection cs = new MySqlConnection("Server=127.0.0.1;Database=db_bank;Uid=bank;Pwd=abc123");
+
+            MySqlCommand acmd = new MySqlCommand(@"INSERT INTO account (bank_id, customer_id, number, balance) VALUES('7', '11', '2000', '1000')", cs);
+            cs.Open();
+            acmd.ExecuteNonQuery();
+
+        }
+
+
+        public void getAllAccounts()
+        {
+            MySqlConnection cs = new MySqlConnection("Server=127.0.0.1;Database=db_bank;Uid=bank;Pwd=abc123");
+
+            MySqlCommand acmd = new MySqlCommand(@"SELECT *FROM account;");
+        }
+
+        public void UpdateAccount()
+        {
+            MySqlConnection cs = new MySqlConnection("Server=127.0.0.1;Database=db_bank;Uid=bank;Pwd=abc123");
+
+            MySqlCommand acmd = new MySqlCommand(@"update account set balance=1000 where account_id=1", cs);
+            cs.Open();
+            acmd.ExecuteNonQuery();
+
+        }
+
+        public void DeleteAccount()
+        {
+            MySqlConnection cs = new MySqlConnection("Server=127.0.0.1;Database=db_bank;Uid=bank;Pwd=abc123");
+
+            MySqlCommand acmd = new MySqlCommand(@"DELETE FROM account WHERE account_id=1;");
+        }
+
 
     }
 }

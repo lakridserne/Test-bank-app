@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Contract_Test.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -9,7 +10,7 @@ namespace REST_API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : ControllerBase, IAccount 
     {
         private static readonly string[] Summaries = new[]
         {
@@ -34,6 +35,41 @@ namespace REST_API.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        public long getBalance()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IBank GetBank()
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICustomer getCustomer()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<IMovement> getMovements(IAccount withdraw)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string getNumber()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void transfer(long amount, IAccount target)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void transfer(long amount, string targetNumber)
+        {
+            throw new NotImplementedException();
         }
     }
 }

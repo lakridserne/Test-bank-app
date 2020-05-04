@@ -56,6 +56,19 @@ namespace Assignment2_Integration_Tests
                 acmd.ExecuteNonQuery();
             }
         }
+
+        public void GetAllBanks()
+        {
+            MySqlConnection cs = new MySqlConnection("Server=127.0.0.1;Database=db_bank;Uid=bank;Pwd=abc123");
+
+            MySqlCommand acmd = new MySqlCommand(@"SELECT * FROM db_bank.bank;", cs);
+            cs.Open();
+            acmd.ExecuteNonQuery();
+
+        }
+
+        
+       
     }
 
 }
